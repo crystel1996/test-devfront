@@ -1,16 +1,27 @@
 <template>
     <div class="pt-[41px] pl-[40px] pr-[49px]">
-        <h1 class="text-[26px] w-[331px] mb-[14px] leading-[32px]">Test psychotechnique : 
+        <h1 class="text-[26px] w-[331px] mb-[14px] leading-[32px] font-title font-bold">Test psychotechnique : 
             <span class="block">
                 Récupérez <span class="underline underline-offset-8 decoration-primary-500">votre permis</span>
             </span>
         </h1>
-        <span class="subtitle text-[17px]">Une démarche simple & rapide</span>
+        <span class="font-sans font-normal text-[17px]">Une démarche simple & rapide</span>
     </div>
     <div class="pt-[35px] pl-[59px]">
         <ul class="flex flex-col gap-1.5">
             <SuccessAction v-for="value in listOfSuccess" :key="value" :value="value"></SuccessAction>
         </ul>
+    </div>
+    <div class="pt-[35px] pl-[73px]">
+        <Button 
+            :text="callToActionBtn.text"
+            :textStyle="callToActionBtn.textStyle"
+            :textClass="callToActionBtn.textClass"
+            :btnClass="callToActionBtn.btnClass"
+            :iconClass="callToActionBtn.iconClass"
+            :iconStyle="callToActionBtn.iconStyle"
+            :showIcon="callToActionBtn.showIcon"
+        ></Button>
     </div>
 </template>
 
@@ -18,20 +29,15 @@
     import { ref } from 'vue';
     import ListOfSucessData from './Data/ListOfSuccess';
     import SuccessAction from './SuccessAction/SuccessAction.vue';
+    import Button from '@components/UI/Button/Button.vue';
+    
     const listOfSuccess = ref(ListOfSucessData);
+    const callToActionBtn = ref({
+        text: "Je réserve mon test psychotechnique",
+        textClass: "text-white text-[14px] font-title font-medium",
+        btnClass: "bg-primary-500",
+        iconClass:"fa-solid fa-angle-right",
+        iconStyle: { color: "white" },
+        showIcon: true
+    });
 </script>
-
-<style scoped>
-    h1 {
-        font-family: Lato, sans-serif;
-        font-weight: bold;
-    }
-    .subtitle {
-        font-family: Nunito, sans-serif;
-        font-weight: 400;
-    }
-    .success-percent {
-        font-family: Nunito, sans-serif;
-        font-weight: 400;
-    }
-</style>

@@ -24,11 +24,11 @@ module.exports = {
                         },
 
                         fontFamily: {
-                                'sans': ['Nunito'],
+                                'sans': ['Nunito', 'sans-serif'],
                                 'display': ['Nunito'],
                                 'mono': ['Nunito'],
                                 'body': ['Nunito'],
-                                'title': ['Lato']
+                                'title': ['Lato', 'sans-serif']
                         },
                         screens: {
                                 'lg': '1024px'
