@@ -26,8 +26,9 @@
     <div class="pt-[11px] flex items-center justify-center">
         <p class="text-[12px] font-body"><i class="fa-regular fa-hand-pointer pr-[8px]"></i> Entrainement Gratuit inclus</p>
     </div>
-    <div class="pt-[20px] flex items-center justify-center">
-        <GoogleRating :rating="3" :review="8085"></GoogleRating>
+    <div class="pt-[20px] flex items-center justify-center gap-[31px]">
+        <GoogleRating :rating="googleRatingData.rating" :review="googleRatingData.review"></GoogleRating>
+        <TrustPilotRating :rating="googleRatingData.rating" :review="googleRatingData.review"></TrustPilotRating>
     </div>
 </template>
 
@@ -37,6 +38,7 @@
     import SuccessAction from './SuccessAction/SuccessAction.vue';
     import Button from '@components/UI/Button/Button.vue';
     import GoogleRating from '@components/Rating/GoogleRating.vue'
+    import TrustPilotRating from '@components/Rating/TrustPilotRating.vue';
     
     const listOfSuccess = ref(ListOfSucessData);
     const callToActionBtn = ref({
@@ -47,4 +49,8 @@
         iconStyle: { color: "white" },
         showIcon: true
     });
+    const googleRatingData = ref({
+        rating: 4.7,
+        review: 8085
+    })
 </script>
