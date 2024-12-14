@@ -1,5 +1,15 @@
-@use "components/fonts";
+@use "components/_fonts";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    max-width: 100vw;
+    overflow: hidden;
+    background: #F8F9FB 0% 0% no-repeat padding-box;
+}

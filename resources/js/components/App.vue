@@ -1,7 +1,9 @@
 <script setup>
-    import Layout from './Layout/Layout.vue'
+    import Header from '@components/Header/Header.vue';
+    import CallToAction from '@components/CallToAction/CallToAction.vue';
 </script>
 
 <template>
-    <Layout></Layout>
+    <Header></Header>
+    <CallToAction></CallToAction>
 </template>

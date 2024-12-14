@@ -2,7 +2,7 @@ const path = require('path');
 const generatePalette = require(path.resolve(__dirname, ('dev/tailwind/utils/generate-palette')));
 
 const customPalettes = {
-        primary: generatePalette('#355689'),
+        primary: generatePalette('#BF2A6B'),
         accent: generatePalette('#c02b6b'),
 };
 
@@ -25,6 +25,9 @@ module.exports = {
                                 'mono': ['Nunito'],
                                 'body': ['Nunito'],
                                 'title': ['Lato']
+                        },
+                        screens: {
+                                'lg': '1024px'
                         },
                 },
         },
