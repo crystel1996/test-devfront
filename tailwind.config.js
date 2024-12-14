@@ -5,7 +5,8 @@ const customPalettes = {
         primary: generatePalette('#BF2A6B'),
         accent: generatePalette('#c02b6b'),
         success: generatePalette('#08BF26'),
-        textColor: generatePalette('#1E1E1E')
+        textColor: generatePalette('#1E1E1E'),
+        googleRating: generatePalette('#FFD43B')
 };
 
 module.exports = {
@@ -20,14 +21,15 @@ module.exports = {
                                 primary: customPalettes.primary,
                                 accent: customPalettes.accent,
                                 success: customPalettes.success,
-                                textColor: customPalettes.textColor
+                                textColor: customPalettes.textColor,
+                                googleRating: customPalettes.googleRating
                         },
 
                         fontFamily: {
                                 'sans': ['Nunito', 'sans-serif'],
                                 'display': ['Nunito'],
                                 'mono': ['Nunito'],
-                                'body': ['Nunito'],
+                                'body': ['Nunito', 'sans-serif'],
                                 'title': ['Lato', 'sans-serif']
                         },
                         screens: {

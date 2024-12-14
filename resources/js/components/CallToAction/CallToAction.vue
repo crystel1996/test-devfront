@@ -12,7 +12,7 @@
             <SuccessAction v-for="value in listOfSuccess" :key="value" :value="value"></SuccessAction>
         </ul>
     </div>
-    <div class="pt-[35px] pl-[73px]">
+    <div class="pt-[35px] flex items-center justify-center">
         <Button 
             :text="callToActionBtn.text"
             :textStyle="callToActionBtn.textStyle"
@@ -23,6 +23,12 @@
             :showIcon="callToActionBtn.showIcon"
         ></Button>
     </div>
+    <div class="pt-[11px] flex items-center justify-center">
+        <p class="text-[12px] font-body"><i class="fa-regular fa-hand-pointer pr-[8px]"></i> Entrainement Gratuit inclus</p>
+    </div>
+    <div class="pt-[20px] flex items-center justify-center">
+        <GoogleRating :rating="3" :review="8085"></GoogleRating>
+    </div>
 </template>
 
 <script setup>
@@ -30,6 +36,7 @@
     import ListOfSucessData from './Data/ListOfSuccess';
     import SuccessAction from './SuccessAction/SuccessAction.vue';
     import Button from '@components/UI/Button/Button.vue';
+    import GoogleRating from '@components/Rating/GoogleRating.vue'
     
     const listOfSuccess = ref(ListOfSucessData);
     const callToActionBtn = ref({
