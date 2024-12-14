@@ -4,6 +4,8 @@ const generatePalette = require(path.resolve(__dirname, ('dev/tailwind/utils/gen
 const customPalettes = {
         primary: generatePalette('#BF2A6B'),
         accent: generatePalette('#c02b6b'),
+        success: generatePalette('#08BF26'),
+        textColor: generatePalette('#1E1E1E')
 };
 
 module.exports = {
@@ -16,7 +18,9 @@ module.exports = {
                 extend: {
                         colors: {
                                 primary: customPalettes.primary,
-                                accent: customPalettes.accent
+                                accent: customPalettes.accent,
+                                success: customPalettes.success,
+                                textColor: customPalettes.textColor
                         },
 
                         fontFamily: {
