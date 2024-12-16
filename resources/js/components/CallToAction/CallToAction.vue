@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col lg:flex-row lg:justify-between lg:border-t-[10px] lg:border-t-primary-500">
+    <div class="flex flex-col lg:flex-row lg:justify-between lg:border-t-[10px] lg:border-t-primary-500 pb-[53px] shadow">
         <div class="flex flex-col items-center justify-center lg:items-start lg:justify-start ml-[40px] lg:ml-[107px]">
             <div class="hidden lg:block lg:mt-[91.42px]">
                 <Logo></Logo>
@@ -66,3 +66,9 @@
         review: 8085
     })
 </script>
+
+<style scoped>
+    .shadow {
+        box-shadow: 0px 3px 6px #00000029;
+    }
+</style>
