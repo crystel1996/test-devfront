@@ -29,7 +29,7 @@
     .iframe-content {
         position: absolute;
         top: 54.2px;
-        left: 41px;
+        left: 0;
         right: 31px;
     } 
     iframe {

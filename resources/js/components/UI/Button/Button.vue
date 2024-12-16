@@ -1,7 +1,7 @@
 <template>
     <button 
         :style="btnStyle"
-        class="rounded pl-[23px] pt-[8px] pb-[9px] pr-[10.71px] flex  items-center"
+        class="rounded pl-[23px] pt-[8px] pb-[9px] pr-[10.71px] lg:pt-[16px] lg:pb-[16px] flex  items-center"
         :class="btnClass"
     >
         <span
