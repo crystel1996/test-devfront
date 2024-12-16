@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col">
+    <div class="flex flex-col items-start justify-start">
         <div class="w-[75px] h-[16px]">
             <img class="h-[16px] w-[52px]" src="@assets/trustpilot.svg" alt="TrustPilot" />
         </div>
@@ -17,7 +17,7 @@
             >
             </i>
         </div>
-        <div class="flex items-center justify-center mt-[3px] text-[8px]">
+        <div class="flex items-start justify-start mt-[3px] text-[8px]">
             <span>Trustscore <span class="font-bold">{{ reviews }}</span> avis</span>
         </div>
     </div>

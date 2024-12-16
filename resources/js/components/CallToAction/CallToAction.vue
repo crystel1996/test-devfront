@@ -1,11 +1,11 @@
 <template>
-    <div class="flex flex-col lg:flex-row">
+    <div class="flex flex-col lg:flex-row lg:justify-between lg:border-t-[10px] lg:border-t-primary-500">
         <div class="flex flex-col items-center justify-center lg:items-start lg:justify-start ml-[40px] lg:ml-[107px]">
             <div class="hidden lg:block lg:mt-[91.42px]">
                 <Logo></Logo>
             </div>
             <div class="mt-[41px] mr-[49px] lg:mt-[43px]">
-                    <h1 class="text-[26px] w-[331px] mb-[14px] leading-[32px] font-title font-bold">Test psychotechnique : 
+                    <h1 class="text-[26px] mb-[14px] leading-[32px] font-title font-bold">Test psychotechnique : 
                         <span class="block lg:inline">
                             Récupérez <span class="underline underline-offset-8 decoration-primary-500">votre permis</span>
                         </span>
@@ -13,7 +13,7 @@
                     <span class="font-sans font-normal text-[17px]">Une démarche simple & rapide</span>
                 </div>
             <div class="mt-[35px] lg:ml-[22px] lg:mt-[37px]">
-                <ul class="flex flex-col gap-1.5">
+                <ul class="flex flex-col gap-1.5 lg:gap-[15px]">
                     <SuccessAction v-for="value in listOfSuccess" :key="value" :value="value"></SuccessAction>
                 </ul>
             </div>
@@ -36,7 +36,7 @@
                 </div>
             </div>
         </div>
-        <div class="mt-[34px]">
+        <div class="mt-[34px] lg:mt-[0px]">
             <VideoPresentation />
         </div>
     </div>
