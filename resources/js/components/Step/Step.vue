@@ -1,6 +1,6 @@
 <template>
-    <div class="pt-[21px] pr-[32px] pl-[32px] bg-white">
-        <div>
+    <div class="pt-[21px] lg:pt-[127px] pr-[32px] pl-[32px] lg:pl-[112px] bg-white lg:flex lg:flex-row-reverse">
+        <div class="pb-[51px] lg:pl-[211px] lg:pt-[60px]">
             <div class="mb-[46px]">
                 <Title :title="title"></Title>
             </div>
@@ -27,8 +27,13 @@
                 </div>
             </div>
         </div>
-        <div>
-            
+        <div class="flex items-center justify-center lg:w-[80%]">
+            <div class="relative  box-image">
+                <img class="w-[356px] h-[355px] lg:w-[669px] lg:h-[668px] object-cover" src="https://picsum.photos/300/300" alt="Step image" />
+                <div class="absolute top-[15px] left-[-25px] lg:left-[auto] lg:right-[-150px]">
+                    <img class="w-[156px] h-[157px] lg:w-[297px] lg:h-[297px] rounded-[100%] object-cover box-image" src="https://picsum.photos/300/300" alt="Step image" />
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -52,3 +57,9 @@
     });
 
 </script>
+
+<style scoped>
+    .box-image {
+        box-shadow: 7px 6px 12px #00000029;
+    }
+</style>
