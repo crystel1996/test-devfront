@@ -6,6 +6,7 @@ const customPalettes = {
         accent: generatePalette('#c02b6b'),
         success: generatePalette('#08BF26'),
         textColor: generatePalette('#1E1E1E'),
+        textColor2: generatePalette('#424242'),
         googleRating: generatePalette('#FFD43B')
 };
 
@@ -22,6 +23,7 @@ module.exports = {
                                 accent: customPalettes.accent,
                                 success: customPalettes.success,
                                 textColor: customPalettes.textColor,
+                                textColor2: customPalettes.textColor2,
                                 googleRating: customPalettes.googleRating
                         },
 
