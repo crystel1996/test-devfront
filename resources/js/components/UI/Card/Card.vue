@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-gray-500 rounded-[12px] pl-[45px] pt-[21px] pr-[38px] pb-[16px] box-shadow" :class="cardClass">
+    <div class="bg-gray-500 rounded-[12px] pl-[45px] pt-[21px] pr-[38px] pb-[16px] lg:max-w-[321px] lg:max-h-[299px] box-shadow">
         <div class="flex mb-[12px]">
             <div class="mr-[12px]">
                 <img class="rounded-full h-[50px] w-[50px]" :src="photo" :alt="user" />
@@ -19,7 +19,7 @@
             </GoogleRating>
         </div>
         <div class="mb-[12px]">
-            <p class="font-semibold">{{ content }}</p>
+            <p class="font-semibold">{{ truncateText(content, 100) }}</p>
         </div>
         <div class="mb-[16px]">
             <a href="#" class="opacity-20">Read more</a>
@@ -28,8 +28,9 @@
 </template>
 
 <script setup>
-    import GoogleRating from '@components/UI/Rating/GoogleRating.vue'
-    const { user, photo, rating, createdAt, content, cardClass } = defineProps({
+    import GoogleRating from '@components/UI/Rating/GoogleRating.vue';
+    import truncateText from '@services/truncateText';
+    const { user, photo, rating, createdAt, content } = defineProps({
         user: {
             type: String,
             defaultValue: ''
@@ -47,10 +48,6 @@
             defaultValue: ''
         },
         content: {
-            type: String,
-            defaultValue: ''
-        },
-        cardClass: {
             type: String,
             defaultValue: ''
         }

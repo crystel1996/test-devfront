@@ -66,6 +66,7 @@
     .carousel-slide {
         display: flex;
         transition: transform 0.5s ease;
+        gap: 25px;
     }
     .carousel-nav {
         position: absolute;

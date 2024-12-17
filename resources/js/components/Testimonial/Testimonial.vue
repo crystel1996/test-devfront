@@ -34,7 +34,6 @@
                     :createdAt="card.createdAt"
                     :rating="card.rating"
                     :content="card.content"
-                    :cardClass="'carousel-item'- + index"
                 ></Card>
             </Carousel>
         </div>
