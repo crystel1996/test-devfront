@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-white pt-[60px] lg:pl-[107px] lg:pt-[224px] lg:pr-[134px] lg:flex">
+    <div class="bg-white pt-[60px] pb-[37px] lg:pb-[275px] lg:pl-[107px] lg:pt-[224px] lg:pr-[134px] lg:flex">
         <div class="lg:mt-[89px] lg:flex lg:flex-col lg:items-start lg:justify-start lg:w-[80%]">
             <div class="mb-[36px]">
                 <Title :title="freeTraining.title"></Title>

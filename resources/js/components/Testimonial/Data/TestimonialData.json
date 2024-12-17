@@ -1,0 +1,33 @@
+{
+    "title": "Ce qu'en pensent nos candidats",
+    "testimonials": [
+        {
+            "user": "Daniele",
+            "photo": "https://i.pravatar.cc",
+            "createdAt": "04 December 2023",
+            "rating": 5,
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis maxime delectus laborum, cumque ab expedita!"
+        },
+        {
+            "user": "A.H.M",
+            "photo": "https://i.pravatar.cc",
+            "createdAt": "02 December 2023",
+            "rating": 4,
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae recusandae culpa soluta magnam voluptatibus commodi porro dolorem esse delectus possimus?"
+        },
+        {
+            "user": "The bearer of the light",
+            "photo": "https://i.pravatar.cc",
+            "createdAt": "02 November 2023",
+            "rating": 5,
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae recusandae culpa soluta magnam voluptatibus commodi porro dolorem esse delectus possimus?"
+        },
+        {
+            "user": "The bearer of the light",
+            "photo": "https://i.pravatar.cc",
+            "createdAt": "02 November 2023",
+            "rating": 5,
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae recusandae culpa soluta magnam voluptatibus commodi porro dolorem esse delectus possimus?"
+        }
+    ]
+}

@@ -3,6 +3,7 @@
     import CallToAction from '@components/CallToAction/CallToAction.vue';
     import Step from '@components/Step/Step.vue';
     import FreeTraining from '@components/FreeTraining/FreeTraining.vue';
+    import Testimonial from '@components/Testimonial/Testimonial.vue';
 </script>
 
 <template>
@@ -10,4 +11,5 @@
     <CallToAction></CallToAction>
     <Step></Step>
     <FreeTraining></FreeTraining>
+    <Testimonial></Testimonial>
 </template>

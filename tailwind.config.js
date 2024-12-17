@@ -7,7 +7,8 @@ const customPalettes = {
         success: generatePalette('#08BF26'),
         textColor: generatePalette('#1E1E1E'),
         textColor2: generatePalette('#424242'),
-        googleRating: generatePalette('#FFD43B')
+        googleRating: generatePalette('#FFD43B'),
+        gray: generatePalette('#F4F4F4')
 };
 
 module.exports = {
@@ -24,7 +25,8 @@ module.exports = {
                                 success: customPalettes.success,
                                 textColor: customPalettes.textColor,
                                 textColor2: customPalettes.textColor2,
-                                googleRating: customPalettes.googleRating
+                                googleRating: customPalettes.googleRating,
+                                gray: customPalettes.gray
                         },
 
                         fontFamily: {

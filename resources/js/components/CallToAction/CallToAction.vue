@@ -31,7 +31,7 @@
                     <p class="text-[12px] font-body"><i class="fa-regular fa-hand-pointer mr-[8px]"></i> Entrainement Gratuit inclus</p>
                 </div>
                 <div class="mt-[20px] gap-[31px] flex items-center justify-center">
-                    <GoogleRating :rating="googleRatingData.rating" :review="googleRatingData.review"></GoogleRating>
+                    <GoogleRating :rating="googleRatingData.rating" :review="googleRatingData.review" :listStartClass="googleRatingData.listStarClass" :withReview="true"></GoogleRating>
                     <TrustPilotRating :rating="googleRatingData.rating" :review="googleRatingData.review"></TrustPilotRating>
                 </div>
             </div>
@@ -63,7 +63,8 @@
     });
     const googleRatingData = ref({
         rating: 4.7,
-        review: 8085
+        review: 8085,
+        listStarClass: "bg-white"
     })
 </script>
 
