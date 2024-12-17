@@ -1,5 +1,8 @@
 {
     "title": "Ce qu'en pensent nos candidats",
+    "status": "Excellent",
+    "globalRating": 5,
+    "review": 414,
     "testimonials": [
         {
             "user": "Daniele",

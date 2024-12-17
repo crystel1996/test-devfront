@@ -15,45 +15,47 @@
     const currentIndex = ref(0);
     const elements = ref(null);
 
+    const { display } = defineProps({
+        display: {
+            type: Number,
+            defaultValue: 1
+        }
+    });
+
     onMounted(() => {
         const carouselSlide = document.querySelector('.carousel-slide');
         elements.value = carouselSlide;
-        Array.from(carouselSlide.children).forEach((child, index) => {
-            if (index == 0) {
+        updateDisplay();
+    });
+
+    const updateDisplay = () => {
+        const children = elements.value ? Array.from(elements.value.children) : [];
+        children.forEach((child, index) => {
+            const start = currentIndex.value *display;
+            const end = start + display;
+
+            if (index >= start && index < end) {
                 child.style.display = 'block';
             } else {
                 child.style.display = 'none';
             }
         });
-    });
+    }
 
     const nextSlide = () => {
         if (elements) {
-            currentIndex.value += 1;
-            if(currentIndex.value > (elements.value.children.length  - 1)) {
-                currentIndex.value = 0;
-            }
+            currentIndex.value = (currentIndex.value + 1) % Math.ceil(elements.value.children.length / display);
+            updateDisplay();
         }
     };
     const prevSlide = () => {
         if (elements) {
-            currentIndex.value -=1;
-            if(currentIndex.value < 0) {
-                currentIndex.value = elements.value.children.length -1;
-            }
+            currentIndex.value = (currentIndex.value - 1 + Math.ceil(elements.value.children.length / display)) % Math.ceil(elements.value.children.length / display);
+            updateDisplay();
         }
     };
 
-    watch(currentIndex, (current, old) => {
-       const children = elements.value.children;
-       Array.from(children).forEach((child, index) => {
-            if (current == index) {
-                child.style.display = 'block';
-            } else {
-                child.style.display = 'none';
-            }
-       });
-    });
+    watch(currentIndex, updateDisplay);
     
 </script>
 
@@ -63,6 +65,7 @@
     }
     .carousel-slide {
         display: flex;
+        transition: transform 0.5s ease;
     }
     .carousel-nav {
         position: absolute;
