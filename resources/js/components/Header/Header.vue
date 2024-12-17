@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-    import Logo from '@components/Logo/Logo.vue'
+    import Logo from '@components/UI/Logo/Logo.vue'
 </script>
 
 <style scoped>

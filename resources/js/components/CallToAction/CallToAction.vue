@@ -47,8 +47,8 @@
     import ListOfSucessData from './Data/ListOfSuccess';
     import SuccessAction from './SuccessAction/SuccessAction.vue';
     import Button from '@components/UI/Button/Button.vue';
-    import GoogleRating from '@components/Rating/GoogleRating.vue'
-    import TrustPilotRating from '@components/Rating/TrustPilotRating.vue';
+    import GoogleRating from '@components/UI/Rating/GoogleRating.vue'
+    import TrustPilotRating from '@components/UI/Rating/TrustPilotRating.vue';
     import VideoPresentation from '@components/CallToAction/VideoPresentation/VideoPresentation.vue';
     import Logo from '@components/Logo/Logo.vue'
     

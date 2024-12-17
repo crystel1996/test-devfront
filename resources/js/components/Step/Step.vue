@@ -40,8 +40,8 @@
 
 <script setup>
     import { ref } from 'vue';
-    import Title from '@components/Title/Title.vue';
-    import Stepper from '@components/Stepper/Stepper.vue';
+    import Title from '@components/UI/itle/Title.vue';
+    import Stepper from '@components/UI/Stepper/Stepper.vue';
     import ListOfStepper from './Data/ListOfStepper.json';
     import Button from '@components/UI/Button/Button.vue';
 
