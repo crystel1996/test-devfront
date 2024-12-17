@@ -4,13 +4,17 @@
             <Title :title="testimonial.title"></Title>
         </div>
         <div class="bg-white rounded-[27px] pt-[49px] pl-[37px] pr-[43px] pb-[53px] box-shadow">
-            <Card 
-                :photo="card.photo" 
-                :user="card.user"
-                :createdAt="card.createdAt"
-                :rating="card.rating"
-                :content="card.content"
-            ></Card>
+            <Carousel>
+                <Card 
+                    v-for="(card, index) in cards"
+                    :photo="card.photo" 
+                    :user="card.user"
+                    :createdAt="card.createdAt"
+                    :rating="card.rating"
+                    :content="card.content"
+                    :cardClass="'carousel-item'- + index"
+                ></Card>
+            </Carousel>
         </div>
     </div>
 </template>
@@ -19,17 +23,12 @@
     import Title from '@components/UI/Title/Title.vue';
     import TestimonialData from './Data/TestimonialData.json';
     import { ref } from 'vue';
-    import Card from '../UI/Card/Card.vue';
+    import Card from '@components/UI/Card/Card.vue';
+    import Carousel from '@components/UI/Carousel/Carousel.vue';
 
     const testimonial = ref(TestimonialData);
 
-    const card= {
-        photo: testimonial.value.testimonials[0].photo,
-        user: testimonial.value.testimonials[0].user,
-        createdAt: testimonial.value.testimonials[0].createdAt,
-        rating: testimonial.value.testimonials[0].rating,
-        content: testimonial.value.testimonials[0].content,
-    }
+    const cards= testimonial.value.testimonials;
     
 </script>
 
