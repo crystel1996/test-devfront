@@ -50,7 +50,7 @@
     import GoogleRating from '@components/UI/Rating/GoogleRating.vue'
     import TrustPilotRating from '@components/UI/Rating/TrustPilotRating.vue';
     import VideoPresentation from '@components/CallToAction/VideoPresentation/VideoPresentation.vue';
-    import Logo from '@components/Logo/Logo.vue'
+    import Logo from '@components/UI/Logo/Logo.vue'
     
     const listOfSuccess = ref(ListOfSucessData);
     const callToActionBtn = ref({
