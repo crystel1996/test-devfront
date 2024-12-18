@@ -12,7 +12,8 @@ const customPalettes = {
         gray: generatePalette('#F4F4F4'),
         blue: generatePalette('#36578A'),
         slateGray: generatePalette('#7A7878'),
-        lightGray: generatePalette('#E9E9E9')
+        lightGray: generatePalette('#E9E9E9'),
+        danger: generatePalette('#B90909')
 };
 
 module.exports = {
@@ -34,7 +35,8 @@ module.exports = {
                                 gray: customPalettes.gray,
                                 blue: customPalettes.blue,
                                 slateGray: customPalettes.slateGray,
-                                lightGray: customPalettes.lightGray
+                                lightGray: customPalettes.lightGray,
+                                danger: customPalettes.danger
                         },
 
                         fontFamily: {

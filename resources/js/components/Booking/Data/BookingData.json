@@ -16,5 +16,39 @@
             "title": "Forte demande",
             "value": "77€"
         }
+    ],
+    "bookings": [
+        {
+            "date": "Lundi 04 Novembre 2024",
+            "place": "50 avenue d'Essomes",
+            "city": "02 Château-Thierry",
+            "price": "77€",
+            "oldPrice": "120€",
+            "availablePlace": 3
+        },
+        {
+            "date": "Lundi 04 Novembre 2024",
+            "place": "50 avenue d'Essomes",
+            "city": "02 Château-Thierry",
+            "price": "77€",
+            "oldPrice": "120€",
+            "availablePlace": 3
+        },
+        {
+            "date": "Lundi 04 Novembre 2024",
+            "place": "50 avenue d'Essomes",
+            "city": "02 Château-Thierry",
+            "price": "77€",
+            "oldPrice": "120€",
+            "availablePlace": 3
+        },
+        {
+            "date": "Lundi 04 Novembre 2024",
+            "place": "50 avenue d'Essomes",
+            "city": "02 Château-Thierry",
+            "price": "77€",
+            "oldPrice": "120€",
+            "availablePlace": 3
+        }
     ]
 }

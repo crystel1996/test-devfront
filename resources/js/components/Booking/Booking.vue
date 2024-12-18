@@ -19,9 +19,29 @@
                 <div class="w-full">
                     <Pricing :listPricing="booking.pricings"></Pricing>
                 </div>
-                <div class="mt-[8px]">
+                <div class="mt-[15px]">
                     <span class="text-[16px]">{{ booking.result }} resultat(s)</span>
                 </div>
+            </div>
+        </div>
+        <div class="w-full">
+            <ListBooking 
+                v-for="item in booking.bookings" 
+                :key="item"
+                :date="item.date"
+                :place="item.place"
+                :city="item.city"
+                :price="item.price"
+                :oldPrice="item.oldPrice"
+                :availablePlace="item.availablePlace"
+            >
+            </ListBooking>
+            <div class="lg:hidden mt-[32px] flex items-center justify-center">
+                <Button
+                    :text="'Voir plus'"
+                    :textClass="'text-white text-[16px] ml-[auto] mr-[auto]'"
+                    :btnClass="'bg-blue-500 w-[143px] h-[32px] pl-[8px]'"
+                ></Button>
             </div>
         </div>
     </div>
@@ -34,6 +54,7 @@ import bookingData from './Data/BookingData.json';
 import SearchInput from '@components/UI/Input/SearchInput.vue';
 import Button from '@components/UI/Button/Button.vue';
 import Pricing from '@components/UI/Pricing/Pricing.vue';
+import ListBooking from './ListBooking.vue';
 
     const booking = ref(bookingData);
 
