@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col items-start justify-start pl-[38px] pr-[38px]">
+    <div class="flex flex-col items-start justify-start pl-[38px] pr-[38px] lg:pl-[107px] lg:pr-[107px]">
         <Title :title="booking.title"></Title>
         <span class="text-primary-500 text-[14px] pt-[8px]">{{ booking.subtitle }}</span>
         <div class="mt-[18.4px] w-full">
@@ -18,6 +18,9 @@
                 ></Button>
                 <div class="w-full">
                     <Pricing :listPricing="booking.pricings"></Pricing>
+                </div>
+                <div class="mt-[8px]">
+                    <span class="text-[16px]">{{ booking.result }} resultat(s)</span>
                 </div>
             </div>
         </div>
