@@ -6,6 +6,7 @@
     import Testimonial from '@components/Testimonial/Testimonial.vue';
 import SuccessBanner from '@components/SuccessBanner/SuccessBanner.vue';
 import PreparingTest from '@components/PreparingTest/PreparingTest.vue';
+import Booking from '@components/Booking/Booking.vue'
 </script>
 
 <template>
@@ -16,4 +17,5 @@ import PreparingTest from '@components/PreparingTest/PreparingTest.vue';
     <Testimonial></Testimonial>
     <SuccessBanner></SuccessBanner>
     <PreparingTest></PreparingTest>
+    <Booking></Booking>
 </template>

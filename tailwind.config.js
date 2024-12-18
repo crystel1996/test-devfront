@@ -10,7 +10,9 @@ const customPalettes = {
         textColor3: generatePalette('#585858'),
         googleRating: generatePalette('#FFD43B'),
         gray: generatePalette('#F4F4F4'),
-        blue: generatePalette('#36578A')
+        blue: generatePalette('#36578A'),
+        slateGray: generatePalette('#7A7878'),
+        lightGray: generatePalette('#E9E9E9')
 };
 
 module.exports = {
@@ -30,7 +32,9 @@ module.exports = {
                                 textColor3: customPalettes.textColor3,
                                 googleRating: customPalettes.googleRating,
                                 gray: customPalettes.gray,
-                                blue: customPalettes.blue
+                                blue: customPalettes.blue,
+                                slateGray: customPalettes.slateGray,
+                                lightGray: customPalettes.lightGray
                         },
 
                         fontFamily: {
@@ -42,6 +46,9 @@ module.exports = {
                         },
                         screens: {
                                 'lg': '1024px'
+                        },
+                        boxShadow: {
+                                'custom-shadow': '0px 3px 6px rgba(0, 0, 0, 0.16)',  // Correspond à '0px 3px 6px #00000029'
                         },
                 },
         },
