@@ -1,5 +1,5 @@
 <template>
-    <div class="pl-[18px] pr-[11px]">
+    <div class="pl-[18px] pr-[11px] mb-[119px] lg:mb-[172px]">
         <div class="mt-[47px] mb-[34px]">
             <Title :title="testimonial.title"></Title>
         </div>
@@ -23,7 +23,7 @@
                     :review="testimonial.review"
                     :listStartClass="bg-transparent"
                 ></GoogleRating>
-                <p class="text-[14px]">Based on <span class="font-bold underline">{{ testimonial.review }} reviews</span></p>
+                <p class="text-[14px] text-center">Based on <span class="font-bold underline">{{ testimonial.review }} reviews</span></p>
                 <img class="w-[120px]" src="@assets/google-logo.png" alt="Google" />
             </div>
             <Carousel :display="isLg ? 3 : 1">

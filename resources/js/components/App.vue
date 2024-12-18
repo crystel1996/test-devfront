@@ -4,6 +4,7 @@
     import Step from '@components/Step/Step.vue';
     import FreeTraining from '@components/FreeTraining/FreeTraining.vue';
     import Testimonial from '@components/Testimonial/Testimonial.vue';
+import SuccessBanner from '@components/SuccessBanner/SuccessBanner.vue';
 </script>
 
 <template>
@@ -12,4 +13,5 @@
     <Step></Step>
     <FreeTraining></FreeTraining>
     <Testimonial></Testimonial>
+    <SuccessBanner></SuccessBanner>
 </template>
