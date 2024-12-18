@@ -1,0 +1,17 @@
+{
+    "title": "Préparez votre test psychotechnique",
+    "items": [
+        {
+            "question": "Qu'est-ce qu'un test psychotechnique?",
+            "content": "Un test psychotechnique est une évaluation des aptitudes cognitives et comportementales, souvent utilisée pour valider ou reprendre un permis de conduire."
+        },
+        {
+            "question": "Quels sont les documents nécessaires ?",
+            "content": "Les documents incluent une pièce d'identité, votre courrier d'annulation de permis, et votre attestation d'inscription."
+        },
+        {
+            "question": "Combien de temps dure le test ?",
+            "content": "Le test dure en moyenne 45 minutes, incluant des exercices et des discussions avec un psychologue agréé."
+        }
+    ]
+}

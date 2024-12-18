@@ -1,6 +1,6 @@
 <template>
     <div class="pl-[18px] pr-[11px] mb-[119px] lg:mb-[172px]">
-        <div class="mt-[47px] mb-[34px]">
+        <div class="mt-[47px] mb-[34px] lg:flex lg:flex-row lg:items-start lg:justify-start lg:pl-[107px]">
             <Title :title="testimonial.title"></Title>
         </div>
         <div class="

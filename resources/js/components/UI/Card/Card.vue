@@ -19,7 +19,7 @@
             </GoogleRating>
         </div>
         <div class="mb-[12px]">
-            <p class="font-semibold">{{ truncateText(content, 100) }}</p>
+            <p class="font-semibold text-textColor2-500">{{ truncateText(content, 100) }}</p>
         </div>
         <div class="mb-[16px]">
             <a href="#" class="opacity-20">Read more</a>

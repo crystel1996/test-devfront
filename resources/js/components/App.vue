@@ -5,6 +5,7 @@
     import FreeTraining from '@components/FreeTraining/FreeTraining.vue';
     import Testimonial from '@components/Testimonial/Testimonial.vue';
 import SuccessBanner from '@components/SuccessBanner/SuccessBanner.vue';
+import PreparingTest from '@components/PreparingTest/PreparingTest.vue';
 </script>
 
 <template>
@@ -14,4 +15,5 @@ import SuccessBanner from '@components/SuccessBanner/SuccessBanner.vue';
     <FreeTraining></FreeTraining>
     <Testimonial></Testimonial>
     <SuccessBanner></SuccessBanner>
+    <PreparingTest></PreparingTest>
 </template>
