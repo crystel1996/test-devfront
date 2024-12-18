@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col items-start justify-start pl-[38px] pr-[38px] lg:pl-[107px] lg:pr-[107px]">
+    <div class="flex flex-col items-start justify-start pl-[38px] pr-[38px] pb-[20px] lg:pl-[107px] lg:pr-[107px] lg:pt-[133px]">
         <Title :title="booking.title"></Title>
         <span class="text-primary-500 text-[14px] pt-[8px]">{{ booking.subtitle }}</span>
         <div class="mt-[18.4px] w-full">
@@ -24,7 +24,7 @@
                 </div>
             </div>
         </div>
-        <div class="w-full">
+        <div class="w-full lg:mt-[24px]">
             <ListBooking 
                 v-for="item in booking.bookings" 
                 :key="item"
