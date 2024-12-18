@@ -1,5 +1,5 @@
 <template>
-    <div class="relative bg-white px-[8px] py-[8px] rounded-[45px] w-[90vw] box-shadow" >
+    <div class="relative bg-white px-[8px] py-[8px] rounded-[45px] w-full box-shadow" >
         <div class="flex items-center rounded-md">
             <span class="absolute left-3 text-gray-500">
                 <i class="text-slateGray-500 w-[12px] h-[17px]" :class="startIcon"></i>
@@ -8,8 +8,7 @@
                 type="text"
                 :placeholder="placeholder" 
                 v-model="inputValue" 
-                class="pl-10 pr-10 py-2 bg-none border-none rounded-md focus:outline-none placeholder-slateGray-500"
-                style="width:100vw"
+                class="pl-10 pr-10 py-2 w-full bg-none border-none rounded-md focus:outline-none placeholder-slateGray-500"
             />
             <span v-if="!inputValue" class="absolute right-[135px] text-gray-500">
                 <i class="text-slateGray-500 w-[12px] h-[17px]" :class="endIcon"></i>

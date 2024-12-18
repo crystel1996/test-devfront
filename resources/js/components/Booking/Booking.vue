@@ -2,7 +2,7 @@
     <div class="flex flex-col items-start justify-start pl-[38px] pr-[38px]">
         <Title :title="booking.title"></Title>
         <span class="text-primary-500 text-[14px] pt-[8px]">{{ booking.subtitle }}</span>
-        <div class="mt-[18.4px]">
+        <div class="mt-[18.4px] w-full">
             <SearchInput
                 :startIcon="'fa-solid fa-location-dot'"
                 :endIcon="'fa-regular fa-paper-plane'"
@@ -13,9 +13,12 @@
                 <Button 
                     :text="'Filtrer'"
                     :textClass="'font-sans text-[16px]'"
-                    :btnClass="'bg-lightGray-500 w-[90vw] custom-shadow flex flex-row justify-center items-center'"
+                    :btnClass="'bg-lightGray-500 w-full mb-[8px] custom-shadow flex flex-row justify-center items-center'"
                     :showIcon="false"
                 ></Button>
+                <div class="w-full">
+                    <Pricing :listPricing="booking.pricings"></Pricing>
+                </div>
             </div>
         </div>
     </div>
@@ -27,6 +30,7 @@ import { ref } from 'vue';
 import bookingData from './Data/BookingData.json';
 import SearchInput from '@components/UI/Input/SearchInput.vue';
 import Button from '@components/UI/Button/Button.vue';
+import Pricing from '@components/UI/Pricing/Pricing.vue';
 
     const booking = ref(bookingData);
 

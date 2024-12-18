@@ -1,4 +1,19 @@
 {
     "title": "Réservez votre test proche de chez vous",
-    "subtitle": "En seulement 3 étapes"
+    "subtitle": "En seulement 3 étapes",
+    "pricings": [
+        {
+            "title": "Le plus rapide",
+            "value": "120€",
+            "isActive": true
+        },
+        {
+            "title": "Le moins cher",
+            "value": "77€"
+        },
+        {
+            "title": "Forte demande",
+            "value": "77€"
+        }
+    ]
 }
